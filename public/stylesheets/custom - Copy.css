@@ -1,31 +1,25 @@
 .container {
-  width: 868px;
+  width: 710px;
 }
 
 body {
-  background: #A0CFEC;
+  background: #cff;
 }
 
 header {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 header img {
- width:200px;
- 
+  padding: 1em;
+  background: #fff;
 }
-side {
-margin-top:20px;
-font-color:red
-display:block;	
-float: right
-}
+
 section {
-width: 570px;
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: 120%;
   padding: 20px;
-  background: #DCEDFA;
+  background: #fff;
 }
 
 section h1 {
@@ -49,24 +43,21 @@ a:visited {
 }
 
 nav {
-  float: center;
+  float: right;
 }
 
 nav {
-  background: #DCEDFA;
-  padding: 0 0.6em;
+  background-color: white;
+  padding: 0 0.7em;
   white-space: nowrap;
 }
 
 nav ul {
-background: #DCEDFA;
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
-margin-top:2px;
-
   list-style-type: none;
   display: inline-block;
   padding: 1em 0;
@@ -78,11 +69,10 @@ nav ul li a {
 }
 
 nav ul li a:visited {
-  color: 543BF5;
+  color: #09c;
 }
 
 nav ul li a:hover {
-
   text-decoration: underline;
 }
 
@@ -93,7 +83,7 @@ display: block;
 text-align: center;
 width: 190px;
 color: #fff;
-background: #4589FF;
+background: #006400;
 font-size: 150%;
 font-weight: bold;
 padding:20px;
@@ -110,7 +100,7 @@ border-radius: 10px;
 footer {
 text-align: center;
 margin-top: 10px;
-width:868px;
+width:710px;
 margin-left: auto;
 margin-right: auto;
 }

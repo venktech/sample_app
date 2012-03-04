@@ -1,11 +1,15 @@
 <header>
-  <% logo= image_tag("logo.png", :alt => "Sample App", :class => "round", :width => "710px") %>
+  <% logo= image_tag("logo.png", :alt => "Sample App", :class => "round", :width => "150") %>
   <%= link_to logo, root_path %>
   <nav class="round">
     <ul>
       <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "Help", help_path %></li>
-      <li><%= link_to "Sign in", '#' %></li>
+	   <li><%= link_to "Plans and Prices", root_path %></li>
+	   
+      
+	  <li><%= link_to "About Us",about_path %></li>
+	   <li><%= link_to "Careers", root_path %></li>
+      <li><%= link_to "Contact Us", contact_path %></li>
     </ul>
   </nav>
 </header>
