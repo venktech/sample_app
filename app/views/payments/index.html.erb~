@@ -1,0 +1,6 @@
+<h1>Purchase app</h1>
+<p>Thank you for you decision to purchase our product..</p>
+<p>
+<% mail_to "hi" , "venktech91@gmail.com", :subject => "This is an example email" %>
+</p>
+

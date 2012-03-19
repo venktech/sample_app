@@ -6,7 +6,7 @@
     <%= render 'layouts/stylesheets' %>
   </head>
   <body>
- 
+ <%= link_to image_tag('https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif'), :action => 'checkout' %>
     <div class="container">
 	
       <%= render 'layouts/header' %>

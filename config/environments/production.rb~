@@ -46,14 +46,4 @@ SampleApp::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
-config.after_initialize do
-  ActiveMerchant::Billing::Base.mode = :test
-
-paypal_options = {
-:login => "venkte_1331656958_biz_api1.gmail.com",
-:password => "1331656983",
-:signature => "AFcWxV21C7fd0v3bYYYRCpSSRl31AC9I9jg1MB.0OFHjtzDHwSOnb.TQ"
-}
-::STANDARD_GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(paypal_options)
-::EXPRESS_GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(paypal_options)
 end
