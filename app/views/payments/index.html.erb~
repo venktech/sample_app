@@ -1,6 +1,6 @@
 <h1>Purchase app</h1>
 <p>Thank you for you decision to purchase our product..</p>
 <p>
-<% mail_to "hi" , "venktech91@gmail.com", :subject => "This is an example email" %>
+  <%= link_to image_tag('https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif'), :action => 'checkout'%>
 </p>
 

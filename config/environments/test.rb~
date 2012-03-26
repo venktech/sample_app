@@ -43,6 +43,7 @@ paypal_options = {
 :signature => "AFcWxV21C7fd0v3bYYYRCpSSRl31AC9I9jg1MB.0OFHjtzDHwSOnb.TQ"
 }
 ::STANDARD_GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(paypal_options)
-::EXPRESS_GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(paypal_options)
+
+ ::EXPRESS_GATEWAY = ActiveMerchant::Billing::BogusGateway.new
 end
 end

@@ -9,14 +9,16 @@ get "payments/index"
   get "payments/complete"
 
  get "users/new"
-  match '/payments', :to => 'payments#index'
+  match '/payments', :to => 'payments#checkout', :action => "checkout"
   match '/signup', :to => 'users#new'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
+
    root :to => 'pages#home'
 
- map.resources :payments
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

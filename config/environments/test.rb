@@ -44,5 +44,6 @@ paypal_options = {
 }
 ::STANDARD_GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(paypal_options)
 ::EXPRESS_GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(paypal_options)
+
 end
 end

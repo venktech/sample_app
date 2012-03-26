@@ -6,13 +6,21 @@
     <%= render 'layouts/stylesheets' %>
   </head>
   <body>
- <%= link_to image_tag('https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif'), :action => 'checkout' %>
+
     <div class="container">
 	
       <%= render 'layouts/header' %>
 	  <%=render 'layouts/side' %>
       <section class="round">
+
         <%= yield %>
+ <h2>paypal </h2>
+
+<form action="https://www.sandbox.paypal.com/uk/cgi-bin/webscr" method="post">
+          <input type="text" name="cmd" value="_s-xclick" />
+          <input type="text" name="encrypted" value="<%= @encrypted_basic %>" />
+          <input type="image" src="/images/btn_xpressCheckout.gif" name="submit" alt="3 credits">
+</form>
       </section>
 	   <%= render 'layouts/footer' %>
 	   

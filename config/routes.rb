@@ -9,12 +9,14 @@ get "payments/index"
   get "payments/complete"
 
  get "users/new"
-  match '/payments', :to => 'payments#index'
+  match '/payments', :to => 'payments#index', :action => "checkout"
   match '/signup', :to => 'users#new'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
+
    root :to => 'pages#home'
+
 
 
 
